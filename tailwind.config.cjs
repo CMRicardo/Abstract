@@ -9,8 +9,8 @@ module.exports = {
         background: "#fff",
       },
       fontFamily: {
-        sans: "America",
-        bold: "America-bold",
+        sans: ["America", "sans-serif"],
+        bold: ["America-bold", "sans-serif"],
       },
     },
   },

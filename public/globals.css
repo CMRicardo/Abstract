@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "America";
+  src: url("fonts/GT-America-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "America-bold";
+  src: url("fonts/GT-America-Bold.ttf") format("truetype");
+}
