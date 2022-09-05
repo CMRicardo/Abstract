@@ -1,0 +1,18 @@
+---
+import Option from "./Option.astro";
+import { OPTIONS } from "../Data";
+---
+
+<section class="p-32">
+  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-32">
+    {
+      OPTIONS.map(({ title, description, image }) => {
+        return (
+          <li>
+            <Option title={title} image={image} description={description} />
+          </li>
+        );
+      })
+    }
+  </ul>
+</section>

@@ -1,0 +1,19 @@
+---
+export interface Props {
+  title: string;
+  image: string;
+  description: string;
+}
+const { title, image, description } = Astro.props;
+---
+
+<article class="flex gap-4 max-w-sm">
+  <div class="flex flex-col">
+    <img class="aspect-square max-h-24" src={image} alt={title} />
+  </div>
+  <div class="grid gap-6">
+    <h2 class="font-bold text-2xl">{title}</h2>
+    <p class="text-2xl">{description}</p>
+    <a class="text-accent text-xl" href="/">Learn more →</a>
+  </div>
+</article>
