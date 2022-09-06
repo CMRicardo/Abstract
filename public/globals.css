@@ -7,3 +7,7 @@
   font-family: "America-bold";
   src: url("fonts/GT-America-Bold.ttf") format("truetype");
 }
+
+.open {
+  display: grid;
+}
