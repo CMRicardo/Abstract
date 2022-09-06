@@ -1,5 +1,10 @@
 ---
-const { width = "auto", height = "auto" } = Astro.props;
+export interface Props {
+  width?: number;
+  height?: number;
+}
+
+const { width = 126, height = 32 } = Astro.props;
 ---
 
 <svg
@@ -7,6 +12,7 @@ const { width = "auto", height = "auto" } = Astro.props;
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 200 51"
   preserveAspectRatio="xMinYMid slice"
+  class="p-0 m-0"
   width={width}
   height={height}
 >
